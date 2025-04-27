@@ -4,28 +4,26 @@ Welcome to the FastAPI tutorial! This guide will help you get started with FastA
 
 ## Steps to Set-up
 
-1. **Install FastAPI**:  
-    Use `pip install fastapi` to install the FastAPI library.
+1. **Set up virtual environment**: 
 
-2. **Install ASGI Server**:  
-    Install an ASGI server like `uvicorn` using `pip install uvicorn`.
+```
+python -m venv venv
+```
+```
+source venv/bin/activate
+```
 
-3. **Create a FastAPI App**:  
-    Write a Python script (e.g., `main.py`) and create a FastAPI instance:
-    ```python
-    from fastapi import FastAPI
+2. **Install Requirements**:  
 
-    app = FastAPI()
+```
+pip install -r requirements.txt
+```
 
-    @app.get("/")
-    def read_root():
-         return {"Hello": "World"}
-    ```
+3. **Run the Application**:  
 
-4. **Run the Application**:  
     Start the server using the command:
     ```bash
-    uvicorn main:app --reload
+    uvicorn blog.main:app --reload
     ```
 
 5. **Access the API**:  

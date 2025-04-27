@@ -1,3 +1,7 @@
 sqlalchemy 
 uvicorn 
 fastapi
+passlib
+bcrypt
+python-jose
+jose
